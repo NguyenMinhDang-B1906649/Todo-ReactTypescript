@@ -1,0 +1,35 @@
+.title {
+  font-size: 2rem;
+}
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  input {
+    flex: 0 0 10%;
+    max-width: 10%;
+    height: 2rem;
+  }
+  .taskName {
+    flex: 0 0 70%;
+    max-width: 70%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    &.taskNameDone {
+      text-decoration: line-through;
+      color: #b2b7b2;
+    }
+  }
+  .taskActions {
+    flex: 0 0 20%;
+    display: flex;
+    max-width: 20%;
+    .taskBtn {
+      flex: 0 0 3.5rem;
+      max-width: 3.5rem;
+      &:last-child {
+        margin-left: 4px;
+      }
+    }
+  }
+}
